@@ -17,5 +17,9 @@ pipeline {
             deploy adapters: [tomcat8(credentialsId: 'fc23e5b7-9930-4dfb-af66-a2a576be52fb', path: '', url: 'http://192.168.66.102:8080')], contextPath: null, war: 'target/*.war'
          }
       }
+
+   }
+   post{
+
    }
 }
